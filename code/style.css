@@ -1,6 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
-  background: #0025FF;
   color: #fff;
+  background-color: #fcd4dc;
 }
 
 header {
@@ -8,15 +12,72 @@ header {
 }
 
 .logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  display: inline-block;
+  background-color: white;
   width: 200px;
   height: 200px;
-  border-radius: 100%;
-  background: #fff;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  animation-name: spin;
+  animation-duration: 7000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }
 
 .logo img {
   width: 140px;
   margin-top: 55px;
+}
+
+.yearbook {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.image {
+  float: left;
+  background-color: white;
+  padding: 15px;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-bottom: 16px;
+  height: 425px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image img{
+  width: 250px;
+  height: auto;
+}
+
+.text {
+  color: #083b53;
+  font-family: 'Lato', sans-serif;
+  font-size: 21px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.05px;
+}
+
+.footer {
+  clear: both;
+  width: 100%;
+  height: 50px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
